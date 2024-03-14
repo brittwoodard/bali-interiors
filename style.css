@@ -31,5 +31,12 @@
       width: 5rem;
       text-align: center;
     }
+
+    .bg-image-style {
+      background-color: rgb(181, 109, 89, .4);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center
+    }
     
 }
