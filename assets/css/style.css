@@ -432,9 +432,10 @@ ul {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.list-disc {
-  list-style-type: disc;
-}
+.logo {
+      width: 5rem;
+      text-align: center;
+    }
 .bg-stone-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
@@ -443,12 +444,11 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
 .p-8 {
   padding: 2rem;
+}
+.text-center {
+  text-align: center;
 }
 
 

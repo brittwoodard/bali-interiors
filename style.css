@@ -27,12 +27,9 @@
 
 @layer components {
 
-    .tag {
-        @apply text-sm inline-block p-1 uppercase tracking-wide text-stone-600;
-    }
-
-    .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+    .logo {
+      width: 5rem;
+      text-align: center;
     }
     
 }
