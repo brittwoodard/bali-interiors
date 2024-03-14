@@ -89,3 +89,26 @@ seo:
         </div>
     </div>
 </section>
+
+<!-- Articles Section -->
+<section class="grid grid-cols-2">
+    <!-- Build Diary -->
+    <div>
+        <div class="bg-image-style h-[30vh]" style="background-image: url('#');">
+        </div>
+        <h2>Build Diary</h2>
+        <p>Read all about the process of building a villa in Bali. We meet different people and accompany them during the building process with all ups and downs.</p>
+        <a href="#">Read more</a>
+    </div>
+    <!-- Latest Articles -->
+    <div>
+        <div class="sm:columns-3">
+            {% for post in site.posts limit:8 %}
+                {% include post-loop-item-alternate.html %}
+            {% endfor %}
+        </div>
+        <div class="w-full text-center">
+        <a href="#" class="button mt-5p mx-5p">Read all articles</a>
+        </div>
+    </div>
+</section>
