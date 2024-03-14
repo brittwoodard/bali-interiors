@@ -331,6 +331,9 @@ h1, h2, h3, h4, h5, h6, p  {
 p:last-child {
     margin-bottom: 0;
   }
+ul {
+    list-style-type: disc;
+  }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -428,6 +431,9 @@ p:last-child {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+.list-disc {
+  list-style-type: disc;
 }
 .bg-stone-100 {
   --tw-bg-opacity: 1;
