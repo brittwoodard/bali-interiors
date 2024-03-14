@@ -1,0 +1,34 @@
+/* ----------- Import Tailwind -----*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ----------- Default Styles to apply to the whole project  --------- */
+
+@layer base {
+
+    h1, h2, h3, h4, h5, h6, p  {
+        margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+}
+
+
+/* ----------- ADDITIONAL COMPONENTS  --------- */
+
+@layer components {
+
+    .tag {
+        @apply text-sm inline-block p-1 uppercase tracking-wide text-stone-600;
+    }
+
+    .button  {
+        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+    }
+    
+}
