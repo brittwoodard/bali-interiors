@@ -1,5 +1,4 @@
 collections:
-  post:
+  posts:
     output: true
-  episode:
-    output: true
+    permalink: /:slug

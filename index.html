@@ -1,7 +1,7 @@
 ---
 layout: default 
 seo: 
-  title: This should appear in the browser tab
+  title: Bali Interiors
   description: 
   keywords: 
   social_image: 
@@ -104,7 +104,21 @@ seo:
     <div>
         <div class="sm:columns-3">
             {% for post in site.posts limit:8 %}
-                {% include post-loop-item-alternate.html %}
+            <a class="p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
+                <div class="bg-cover min-h-[20vw] relative">
+                    <img src="{{ post.featured_image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div class="p-8 relative bg-stone-100">
+                    
+            
+                    <h2 class="mt-1 font-sans uppercase text-xl tracking-tight"> {{ post.title }} </h2>
+                    <p class="line-clamp-2 tracking-wide mb-4"> {{ post.description }}</p>
+                    <p class="uppercase underline font-serif text-xl underline-offset-4 tracking-wider"> 
+                        Read More
+                    </p>
+            
+                </div>
+            </a>
             {% endfor %}
         </div>
         <div class="w-full text-center">
@@ -115,28 +129,29 @@ seo:
 
 <!-- Peak In Paradise -->
 <section>
-    <h2 class="text-center">A Peak In Paradise</h2>
-    <span>Recent Episodes</span>
-  
-    <div class="grid grid-cols-3 gap-2">
-  
-      {% for item in site.episodes limit: 9 %}
-  
-        <div class="break-inside-avoid block mb-4 px-2" href="{{episode.url}}">
-  
-          <!-- Background image -->
-          <div class="bg-cover min-h-[20vh] md:pb-[20vw]" style="background-image:url( '{{ episode.featured_image }}' );"></div>
-  
-          <!-- Text container  -->
-          <div>
-            <h3 class="text-2xl text-left font-sans my-4">
-              {{episode.title}}
-            </h3>
-            <p class="leading-relaxed mb-4 line-clamp-3">
-              {{episode.description}}</p>
-            <a href="{{episode.url}}" class="button">Watch now</a>
-          </div>
-        </div>
-      {% endfor %}
+    <div class="flex justify-between mb-4">
+        <h2>Recently on A Peek In Paradise</h2>
     </div>
-  </section>
+    <div class="grid grid-cols-3">
+
+        {% assign series_posts = site.posts | where: 'series', 'a-peek-in-paradise' %}
+        
+        {% for post in series_posts limit:3 %}
+      
+        <div>
+            <a class="break-inside-avoid block mb-4" href="{{post.url}}">
+                <div class="bg-image-style min-h-[20vw] relative">
+                    <img src="{{post.featured_image}}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div class="relative">
+                    <h2>{{post.title}}</h2>
+                    <p class="line-clamp-2 mb-4"> {{post.description}}</p>
+                    <p>Read More</p>
+                </div>
+            </a>
+        </div>
+
+        {% endfor %}
+  
+    </div>
+</section> 

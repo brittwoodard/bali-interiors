@@ -485,19 +485,13 @@ ul {
 .left-4 {
   left: 1rem;
 }
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
 .mx-5p {
   margin-left: 5%;
   margin-right: 5%;
 }
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -526,8 +520,17 @@ ul {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
 .block {
   display: block;
+}
+.flex {
+  display: flex;
 }
 .grid {
   display: grid;
@@ -547,11 +550,17 @@ ul {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
+.min-h-\[20vw\] {
+  min-height: 20vw;
+}
 .w-10 {
   width: 2.5rem;
 }
 .w-full {
   width: 100%;
+}
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 .break-inside-avoid {
   -moz-column-break-inside: avoid;
@@ -562,6 +571,12 @@ ul {
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.justify-between {
+  justify-content: space-between;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -604,25 +619,17 @@ ul {
 .p-8 {
   padding: 2rem;
 }
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.text-left {
-  text-align: left;
+.p-5p {
+  padding: 5%;
 }
 .text-center {
   text-align: center;
 }
-.font-sans {
-  font-family: Montserrat, sans-serif;
-}
 .font-serif {
   font-family: Italiana, serif;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-sans {
+  font-family: Montserrat, sans-serif;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -632,17 +639,34 @@ ul {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .font-bold {
   font-weight: 700;
 }
 .uppercase {
   text-transform: uppercase;
 }
-.leading-relaxed {
-  line-height: 1.625;
-}
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.underline {
+  text-decoration-line: underline;
+}
+.underline-offset-4 {
+  text-underline-offset: 4px;
 }
 
 
@@ -655,11 +679,5 @@ ul {
   .sm\:columns-3 {
     -moz-columns: 3;
          columns: 3;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:pb-\[20vw\] {
-    padding-bottom: 20vw;
   }
 }
