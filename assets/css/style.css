@@ -553,6 +553,9 @@ ul {
 .min-h-\[20vw\] {
   min-height: 20vw;
 }
+.min-h-\[50vh\] {
+  min-height: 50vh;
+}
 .w-10 {
   width: 2.5rem;
 }
