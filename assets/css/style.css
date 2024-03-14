@@ -562,6 +562,14 @@ ul {
 .max-w-screen-xl {
   max-width: 1280px;
 }
+.columns-3 {
+  -moz-columns: 3;
+       columns: 3;
+}
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
+}
 .break-inside-avoid {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
