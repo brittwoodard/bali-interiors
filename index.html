@@ -1,10 +1,10 @@
 ---
-layout: default 
-seo: 
+layout: default
+seo:
   title: Bali Interiors
-  description: 
-  keywords: 
-  social_image: 
+  description:
+  keywords:
+  social_image:
   hide-from-google: false
 ---
 
@@ -16,7 +16,8 @@ seo:
 <!-- About -->
 <section class="grid grid-cols-3">
     <div>
-        <p>We are creators of interiors and lifestyle images. Through our media channels we help businesses reach millions of people worldwide.</p>
+        <p>We are creators of interiors and lifestyle images. Through our media channels we help businesses reach
+            millions of people worldwide.</p>
     </div>
     <div>
         <h2>Work with us</h2>
@@ -73,7 +74,7 @@ seo:
             <button type="submit" class="button">Send</button>
         </form>
     </div>
-        </form>
+    </form>
     </div>
 </section>
 
@@ -85,7 +86,8 @@ seo:
     </div>
     <div class=”youtube-container”>
         <div class='embed-container'>
-            <iframe src='https://www.youtube.com/embed/l0dbMaWb5m4?si=SQUYFTt3G62BZmR6' frameborder='0' allowfullscreen></iframe>
+            <iframe src='https://www.youtube.com/embed/l0dbMaWb5m4?si=SQUYFTt3G62BZmR6' frameborder='0'
+                allowfullscreen></iframe>
         </div>
     </div>
 </section>
@@ -97,7 +99,8 @@ seo:
         <div class="bg-image-style h-[30vh]" style="background-image: url('#');">
         </div>
         <h2>Build Diary</h2>
-        <p>Read all about the process of building a villa in Bali. We meet different people and accompany them during the building process with all ups and downs.</p>
+        <p>Read all about the process of building a villa in Bali. We meet different people and accompany them during
+            the building process with all ups and downs.</p>
         <a href="#">Read more</a>
     </div>
     <!-- Latest Articles -->
@@ -108,7 +111,8 @@ seo:
 
             <a class="reak-inside-avoid block mb-4" href="{{post.url}}">
                 <div class="bg-image-style min-h-[20vw] relative">
-                    <img src="{{post.featured_image}}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
+                    <img src="{{post.featured_image}}" alt="{{post.title}}"
+                        class="absolute inset-0 w-full h-full object-cover">
                 </div>
                 <div class="relative">
                     <h2>{{post.title}}</h2>
@@ -121,7 +125,7 @@ seo:
 
         </div>
         <div class="w-full text-center">
-        <a href="#" class="button mt-5p mx-5p">Read all articles</a>
+            <a href="#" class="button mt-5p mx-5p">Read all articles</a>
         </div>
     </div>
 </section>
@@ -134,13 +138,14 @@ seo:
     <div class="grid grid-cols-3">
 
         {% assign series_posts = site.posts | where: 'series', 'a-peek-in-paradise' %}
-        
+
         {% for post in series_posts limit:3 %}
-      
+
         <div>
             <a class="break-inside-avoid block mb-4" href="{{post.url}}">
                 <div class="bg-image-style min-h-[20vw] relative">
-                    <img src="{{post.featured_image}}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
+                    <img src="{{post.featured_image}}" alt="{{post.title}}"
+                        class="absolute inset-0 w-full h-full object-cover">
                 </div>
                 <div class="relative">
                     <h2>{{post.title}}</h2>
@@ -151,9 +156,9 @@ seo:
         </div>
 
         {% endfor %}
-  
+
     </div>
-</section> 
+</section>
 
 <!-- Work Featured In -->
 <section>
@@ -170,7 +175,8 @@ seo:
 <!-- Shop -->
 <section>
     <h2>BI Home shop</h2>
-    <p>We thrive to bring a fusion of island life and sophistication to your home. Slow paced homewares that have been carefully curated, designed by our team and handmade by Indonesian craftsmen and artisans.</p>
+    <p>We thrive to bring a fusion of island life and sophistication to your home. Slow paced homewares that have been
+        carefully curated, designed by our team and handmade by Indonesian craftsmen and artisans.</p>
     <div class="grid grid-cols-3">
         <!-- Prints -->
         <div class="bg-image-style min-h-[50vh]" style="background-image: url('#');">
@@ -190,4 +196,41 @@ seo:
             <a class="button" href="#">Shop</a>
         </div>
     </div>
+</section>
+
+<!-- Join the Community -->
+<section class="bg-image-style" style="background-image: url('#');">
+    <h2>{{page.cta.heading_html}}</h2>
+    <h3>{{page.cta.subtitle}}</h3>
+    <p>{{page.cta.description_html}}</p>
+    <form>
+        <!-- First Name -->
+        <div class="mc-field-group md:col-span-2">
+            <input type="text" name="FNAME" class="required text bg-transparent border border-white w-full"
+                placeholder=" First Name" id="mce-FNAME" required="" value="">
+        </div>
+
+        <!-- Last Name -->
+        <div class="mc-field-group md:col-span-2">
+            <input type="text" name="LNAME" class="required text bg-transparent border border-white w-full"
+                placeholder=" Last Name" id="mce-LNAME" required="" value="">
+        </div>
+
+        <!-- Email -->
+        <div class="mc-field-group md:col-span-2">
+            <input type="email" name="EMAIL" class="required email bg-transparent border border-white w-full"
+                placeholder=" Email" id="mce-EMAIL" required="" value="">
+        </div>
+
+        <!-- Button -->
+        <div class="clear col-span-1">
+            <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                class="button rounded-none py-0 cursor-pointer w-full" value="Submit">
+        </div>
+        </div>
+    </form>
+</section>
+
+<section>
+    Instagram Feed
 </section>
