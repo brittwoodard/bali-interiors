@@ -1,3 +1,5 @@
 collections:
   post:
     output: true
+  episode:
+    output: true
