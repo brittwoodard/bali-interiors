@@ -1,5 +1,19 @@
 ---
 layout: default
+heading: 
+  image: 
+   - background_image: /images/temporary-images/bai-1.jpg
+     image_focus: center
+   - background_image: /images/temporary-images/bai-2.jpg
+     image_focus: center
+   - background_image: /images/temporary-images/bai-3.jpg
+     image_focus: center
+   - background_image: /images/temporary-images/bai-4.jpg
+     image_focus: center
+   - background_image: /images/temporary-images/bai-5.jpg
+     image_focus: center
+   - background_image: /images/temporary-images/bai-6.jpg
+     image_focus: center
 seo:
   title: Bali Interiors
   description:
@@ -9,9 +23,25 @@ seo:
 ---
 
 <!-- Hero Banner -->
-<section class="min-h-[90vh] bg-image-style">
+<!-- <section>
+    <div class="slider-container">
+        <div class="slider-item bg-image-style min-h-[85vh]" style="background-image: url('/images/temporary-images/bai-1.jpg');"></div>
+        <div class="slider-item bg-image-style min-h-[85vh]" style="background-image: url('/images/temporary-images/bai-2.jpg');"></div>
+        <div class="slider-item bg-image-style min-h-[85vh]" style="background-image: url('/images/temporary-images/bai-3.jpg');"></div>
+        <div class="slider-item bg-image-style min-h-[85vh]" style="background-image: url('/images/temporary-images/bai-4.jpg');"></div>
+    </div>
+</section> -->
 
+<!-- Hero Banner -->
+<section>
+    <div class="slider-container">
+        {% for item in page.heading.image %}
+        <div class="slider-item bg-image-style min-h-[85vh]"
+             style="background-image: url('{{ item.background_image }}'); background-position: {{ item.image_focus }};"></div>
+        {% endfor %}
+    </div>
 </section>
+
 
 <!-- About -->
 <section class="grid grid-cols-3">

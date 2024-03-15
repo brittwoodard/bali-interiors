@@ -522,6 +522,9 @@ ul {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
+.min-h-\[85vh\] {
+  min-height: 85vh;
+}
 .w-10 {
   width: 2.5rem;
 }
