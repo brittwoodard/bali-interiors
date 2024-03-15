@@ -461,6 +461,12 @@ ul {
 .left-4 {
   left: 1rem;
 }
+.bottom-0 {
+  bottom: 0px;
+}
+.left-0 {
+  left: 0px;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -598,6 +604,10 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-medium {
+  --tw-bg-opacity: 1;
+  background-color: rgb(181 109 89 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
@@ -660,6 +670,10 @@ ul {
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(122 139 121 / var(--tw-text-opacity));
+}
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(251 249 248 / var(--tw-text-opacity));
 }
 .underline-offset-4 {
   text-underline-offset: 4px;

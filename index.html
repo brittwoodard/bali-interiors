@@ -4,16 +4,28 @@ heading:
   image: 
    - background_image: /images/temporary-images/bai-1.jpg
      image_focus: center
+     title: International Women's Day 2024
+     subtitle: Inspiring women in Bali's design community
    - background_image: /images/temporary-images/bai-2.jpg
      image_focus: center
+     title: Casa Sofia and Castle Lunita
+     subtitle: Breathtaking new uluwatu villas
    - background_image: /images/temporary-images/bai-3.jpg
      image_focus: center
+     title: Candidasa Villa Blanca
+     subtitle: Best beachront villa in Bali
    - background_image: /images/temporary-images/bai-4.jpg
      image_focus: center
+     title: Nyepi Festival 2024
+     subtitle: The best hotels for nyepi festival in Bali
    - background_image: /images/temporary-images/bai-5.jpg
      image_focus: center
+     title: Lorem Ipsum Dolor Sit
+     subtitle: Consectetur adipiscing elit, sed do eiusmod
    - background_image: /images/temporary-images/bai-6.jpg
      image_focus: center
+     title: Labore et Dolore Magna
+     subtitle: Ut enim ad minim veniam quis nostrud exercitation
 seo:
   title: Bali Interiors
   description:
@@ -22,25 +34,22 @@ seo:
   hide-from-google: false
 ---
 
-<!-- Hero Banner -->
-<!-- <section>
-    <div class="slider-container">
-        <div class="slider-item bg-image-style min-h-[85vh]" style="background-image: url('/images/temporary-images/bai-1.jpg');"></div>
-        <div class="slider-item bg-image-style min-h-[85vh]" style="background-image: url('/images/temporary-images/bai-2.jpg');"></div>
-        <div class="slider-item bg-image-style min-h-[85vh]" style="background-image: url('/images/temporary-images/bai-3.jpg');"></div>
-        <div class="slider-item bg-image-style min-h-[85vh]" style="background-image: url('/images/temporary-images/bai-4.jpg');"></div>
-    </div>
-</section> -->
 
 <!-- Hero Banner -->
 <section>
     <div class="slider-container">
         {% for item in page.heading.image %}
-        <div class="slider-item bg-image-style min-h-[85vh]"
-             style="background-image: url('{{ item.background_image }}'); background-position: {{ item.image_focus }};"></div>
+        <div class="slider-item bg-image-style min-h-[85vh] relative"
+             style="background-image: url('{{ item.background_image }}'); background-position: {{ item.image_focus }};">
+            <div class="text-overlay p-4 bg-medium text-light absolute bottom-0 left-0">
+                <p>{{item.title}}</p>
+                <p>{{item.subtitle}}</p>
+            </div>
+        </div>
         {% endfor %}
     </div>
 </section>
+
 
 
 <!-- About -->
