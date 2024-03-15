@@ -640,6 +640,12 @@ ul {
 .bg-cover {
   background-size: cover;
 }
+.bg-contain {
+  background-size: contain;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -675,6 +681,9 @@ ul {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.pr-\[20\%\] {
+  padding-right: 20%;
 }
 .text-center {
   text-align: center;

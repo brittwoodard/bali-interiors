@@ -29,7 +29,7 @@ heading:
 about: 
   description_html: We are <em>creators</em> of <em>interiors</em> and <em>lifestyle images</em>. Through our media channels, we help businesses <em>reach millions of people</em> worldwide.
   background-image: 
-    background_image: /images/temporary-images/bai-7.png
+    background_image: /images/temporary-images/bali-9.png
     background_position: right
 seo:
   title: Bali Interiors
@@ -58,12 +58,13 @@ seo:
 
 
 <!-- About -->
-<section class="grid grid-cols-3 items-center">
-    <div class="col-span-2 bg-image-style" style="background-image: url('{{page.about.background-image.background_image}}'); background-position: {{page.about.background-image.image_focus}};">
-        <div>
+<section class="grid grid-cols-3">
+    <div id="parallax-background" class="col-span-2 bg-no-repeat bg-contain parallax-background" style="background-image: url('{{page.about.background-image.background_image}}'); background-position: right bottom;">
+        <div class="flex items-center" style="height: 100%;">
             <p class="sans-md text-dark p-10p w-[80%]">{{page.about.description_html}}</p>
         </div>
-    </div>
+    </div>    
+    
     <div class="bg-dark text-light p-10p">
         <h2 class="serif-md capitalize">Work with us</h2>
         <p>Let's Connect</p>
