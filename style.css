@@ -15,8 +15,7 @@
 @layer base {
 
   body {
-    background-color: var(--light);
-    color: black;
+    @apply bg-light font-sans font-light
   }
 
   nav a:hover {
@@ -45,6 +44,19 @@
 
     .serif-md {
       @apply font-serif text-[2rem] mb-[0.5em]
+    }
+
+    .sans-md {
+      @apply font-sans text-[2rem]
+    }
+
+    .button-form {
+      border: 1px solid var(--light);
+      padding: 0.5rem 1rem;
+    }
+
+    .button-form:hover {
+      @apply bg-light/30 duration-500
     }
 
     .logo {

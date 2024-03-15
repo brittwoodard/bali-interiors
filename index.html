@@ -26,6 +26,11 @@ heading:
      image_focus: center
      title: Labore et Dolore Magna
      subtitle: Ut enim ad minim veniam quis nostrud exercitation
+about: 
+  description_html: We are <em>creators</em> of <em>interiors</em> and <em>lifestyle images</em>. Through our media channels, we help businesses <em>reach millions of people</em> worldwide.
+  background-image: 
+    background_image: /images/temporary-images/bai-7.png
+    background_position: right
 seo:
   title: Bali Interiors
   description:
@@ -53,27 +58,28 @@ seo:
 
 
 <!-- About -->
-<section class="grid grid-cols-3">
-    <div>
-        <p>We are creators of interiors and lifestyle images. Through our media channels we help businesses reach
-            millions of people worldwide.</p>
+<section class="grid grid-cols-3 items-center">
+    <div class="col-span-2 bg-image-style" style="background-image: url('{{page.about.background-image.background_image}}'); background-position: {{page.about.background-image.image_focus}};">
+        <div>
+            <p class="sans-md text-dark p-10p w-[80%]">{{page.about.description_html}}</p>
+        </div>
     </div>
-    <div>
-        <h2>Work with us</h2>
+    <div class="bg-dark text-light p-10p">
+        <h2 class="serif-md capitalize">Work with us</h2>
         <p>Let's Connect</p>
-        <form>
+        <form class="text-[1.1rem]">
             <div class="mb-4">
-                <input type="text" id="first-name" name="first-name" class="block border-b border-black w-full">
+                <input type="text" id="first-name" name="first-name" class="block w-full border-b border-light bg-transparent">
                 <label for="first-name">First Name:</label>
             </div>
 
             <div class="mb-4">
-                <input type="text" id="last-name" name="last-name" class="block border-b border-black w-full">
+                <input type="text" id="last-name" name="last-name" class="block w-full border-b border-light bg-transparent">
                 <label for="last-name">Last Name:</label>
             </div>
 
             <div class="mb-4">
-                <input type="text" id="company" name="company" class="block border-b border-black w-full">
+                <input type="text" id="company" name="company" class="block w-full border-b border-light bg-transparent">
                 <label for="company">Company:</label>
             </div>
 
@@ -106,11 +112,11 @@ seo:
             </div>
 
             <div class="mb-4">
-                <input type="email" id="email" name="email" class="block border-b border-black w-full">
+                <input type="email" id="email" name="email" class="block border-b border-light bg-transparent w-full">
                 <label for="email">Email:</label>
             </div>
 
-            <button type="submit" class="button">Send</button>
+            <button type="submit" class="button-form">Send</button>
         </form>
     </div>
     </form>

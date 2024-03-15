@@ -326,9 +326,11 @@ video {
   display: none;
 }
 body {
-    background-color: var(--light);
-    color: black;
-  }
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 249 248 / var(--tw-bg-opacity));
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
 nav a:hover {
     color: var(--dark);
     transition: 0.5s;
@@ -445,6 +447,18 @@ ul {
   font-family: GFS Didot, serif;;
   font-size: 2rem;
 }
+.sans-md {
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+}
+.button-form {
+      border: 1px solid var(--light);
+      padding: 0.5rem 1rem;
+    }
+.button-form:hover {
+  background-color: rgb(251 249 248 / 0.3);
+  transition-duration: 500ms;
+}
 .logo {
       width: 5rem;
       text-align: center;
@@ -478,6 +492,9 @@ ul {
 }
 .col-span-1 {
   grid-column: span 1 / span 1;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 .mx-5p {
   margin-left: 5%;
@@ -540,6 +557,9 @@ ul {
 .w-10 {
   width: 2.5rem;
 }
+.w-\[80\%\] {
+  width: 80%;
+}
 .w-full {
   width: 100%;
 }
@@ -587,17 +607,20 @@ ul {
 .border-t-2 {
   border-top-width: 2px;
 }
-.border-black {
+.border-light {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(251 249 248 / var(--tw-border-opacity));
 }
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.bg-medium {
+.bg-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(181 109 89 / var(--tw-bg-opacity));
+  background-color: rgb(122 139 121 / var(--tw-bg-opacity));
+}
+.bg-medium\/80 {
+  background-color: rgb(181 109 89 / 0.8);
 }
 .bg-stone-100 {
   --tw-bg-opacity: 1;
@@ -614,18 +637,15 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-medium\/50 {
-  background-color: rgb(181 109 89 / 0.5);
-}
-.bg-medium\/80 {
-  background-color: rgb(181 109 89 / 0.8);
-}
 .bg-cover {
   background-size: cover;
 }
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.p-10p {
+  padding: 10%;
 }
 .p-2 {
   padding: 0.5rem;
@@ -666,22 +686,21 @@ ul {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-\[1\.1rem\] {
+  font-size: 1.1rem;
+}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-.text-\[1\.1rem\] {
-  font-size: 1.1rem;
 }
 .font-bold {
   font-weight: 700;
 }
 .uppercase {
   text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
