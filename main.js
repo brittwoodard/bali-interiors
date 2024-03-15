@@ -1,7 +1,7 @@
 // Slick
 $('.slider-container').slick({
 	autoplay: true, 
-	autoplaySpeed: 900, 
+	autoplaySpeed: 2000, 
 	speed: 500, 
 	arrows: false, 
 	accessibility: true, 

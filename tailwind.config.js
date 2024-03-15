@@ -9,7 +9,7 @@ module.exports = {
     theme: {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
-        serif: ['Italiana', 'serif'],
+        serif: ['GFS Didot', 'serif;'],
       },
       extend: {
         spacing: {

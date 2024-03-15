@@ -41,9 +41,9 @@ seo:
         {% for item in page.heading.image %}
         <div class="slider-item bg-image-style min-h-[85vh] relative"
              style="background-image: url('{{ item.background_image }}'); background-position: {{ item.image_focus }};">
-            <div class="text-overlay p-4 bg-medium text-light absolute bottom-0 left-0">
-                <p>{{item.title}}</p>
-                <p>{{item.subtitle}}</p>
+            <div class="text-overlay p-8 bg-medium/80 text-light absolute bottom-0 left-0">
+                <p class="serif-md">{{item.title}}</p>
+                <p class="text-[1.1rem]">{{item.subtitle}}</p>
             </div>
         </div>
         {% endfor %}

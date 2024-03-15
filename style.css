@@ -14,6 +14,11 @@
 
 @layer base {
 
+  body {
+    background-color: var(--light);
+    color: black;
+  }
+
   nav a:hover {
     color: var(--dark);
     transition: 0.5s;
@@ -37,6 +42,10 @@
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
 @layer components {
+
+    .serif-md {
+      @apply font-serif text-[2rem] mb-[0.5em]
+    }
 
     .logo {
       width: 5rem;
