@@ -1,11 +1,13 @@
-<header class="text-center">
+<nav class="flex justify-around items-center py-8 px-32">
+    <div>
+        {% for item in site.data.site-settings.navigation limit:3 %}
+        <a href="{{item.url}}" class="py-1 px-16">{{item.title}}</a>
+        {% endfor %}
+    </div>
     <img src="/images/logos/bi-logo.png" class="logo">
-    <nav>
-        <a href="#">Bali</a>
-        <a href="#">Lifestyle</a>
-        <a href="#">Shop</a>
-        <a href="#">Videos</a>
-        <a href="#">Podcast</a>
-        <a href="#">Retreat</a>
-    </nav>
-</header>
+    <div">
+        {% for item in site.data.site-settings.navigation limit:3 offset:3 %}
+        <a href="{{item.url}}" class="py-1 px-16">{{item.title}}</a>
+        {% endfor %}
+    </div>
+</nav>

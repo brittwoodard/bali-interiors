@@ -17,6 +17,11 @@ module.exports = {
           '10p': '10%',
           '15p': '15%',
         },
+        colors: {
+          'light': '#fbf9f8',
+          'medium': '#b56d59',
+          'dark': '#7a8b79',
+        },
         aspectRatio: {
           'landscape': '2 / 1 ',
           'portrait': '3 / 4',
