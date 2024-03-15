@@ -640,11 +640,11 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-cover {
-  background-size: cover;
-}
 .bg-contain {
   background-size: contain;
+}
+.bg-cover {
+  background-size: cover;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -684,9 +684,6 @@ ul {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.pr-\[20\%\] {
-  padding-right: 20%;
 }
 .text-center {
   text-align: center;
