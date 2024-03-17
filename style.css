@@ -24,8 +24,14 @@
     transition: 0.5s;
   }
 
-    h1, h2, h3, h4, h5, h6, p  {
-        margin-bottom: 1rem;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-bottom: 1rem;
   }
 
   p:last-child {
@@ -43,32 +49,54 @@
 
 @layer components {
 
-    .serif-md {
-      @apply font-serif text-[2rem] mb-[0.5em]
-    }
+  .serif-md {
+    @apply font-serif text-[2rem] mb-[0.5em]
+  }
 
-    .sans-md {
-      @apply font-sans text-[2rem]
-    }
+  .sans-md {
+    @apply font-sans text-[2rem]
+  }
 
-    .button-form {
-      border: 1px solid var(--light);
-      padding: 0.5rem 1rem;
-    }
+  .button-form {
+    border: 1px solid var(--light);
+    padding: 0.5rem 1rem;
+    display: inline-block;
+  }
 
-    .button-form:hover {
-      @apply bg-light/30 duration-500
-    }
+  .button-form:hover {
+    @apply bg-light/30 duration-500
+  }
 
-    .logo {
-      width: 5rem;
-      text-align: center;
-    }
+  .logo {
+    width: 5rem;
+    text-align: center;
+  }
 
-    .bg-image-style {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center
-    }
-    
+  .bg-image-style {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+  }
+
+  #retreat .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    /* Adjust if necessary */
+  }
+
+  #retreat .embed-container iframe,
+  #retreat .embed-container object,
+  #retreat .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
 }

@@ -54,7 +54,7 @@ seo:
 <!-- About -->
 <section class="grid grid-cols-5 border-2 border-dark">
     <div id="parallax-background" class="col-span-3 bg-no-repeat bg-contain" style="background-image: url('{{page.about.background-image.background_image}}'); background-position: right bottom;">
-        <div class="flex items-center" style="height: 100%;">
+        <div class="flex items-center h-[100%]">
             <p class="sans-md text-dark p-10p w-[80%]">{{page.about.description_html}}</p>
         </div>
     </div>    
@@ -119,13 +119,16 @@ seo:
 </section>
 
 <!-- Retreat Section -->
-<section class="grid grid-cols-3 gap-8 p-10p bg-feature text-light">
-    <div class="col-span-2">
-        <h2 class="serif-md">Design & Interiors Retreat in Bali</h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+<section id="retreat" class="grid grid-cols-2 p-10p bg-feature text-light">
+    <div class="pr-12 flex items-center">
+        <div>
+            <h2 class="serif-md border-b border-light pb-4">Design & Interiors Retreat in Bali</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+            <a href="#" class="button-form">Learn More</a>
+        </div>
     </div>
     <div class=”youtube-container”>
-        <div class="embed-container">
+        <div class="embed-container border-2 border-dark">
             <iframe src='https://www.youtube.com/embed/l0dbMaWb5m4?si=SQUYFTt3G62BZmR6' frameborder='0'
                 allowfullscreen></iframe>
         </div>
