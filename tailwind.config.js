@@ -19,8 +19,10 @@ module.exports = {
         },
         colors: {
           'light': '#fbf9f8',
-          'medium': '#b56d59',
+          'medium': '#f0e1dd',
           'dark': '#7a8b79',
+          'feature': '#b56d59',
+          'black': '#242924',
         },
         aspectRatio: {
           'landscape': '2 / 1 ',

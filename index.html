@@ -6,10 +6,6 @@ heading:
      image_focus: center
      title: International Women's Day 2024
      subtitle: Inspiring women in Bali's design community
-   - background_image: /images/temporary-images/bai-2.jpg
-     image_focus: center
-     title: Casa Sofia and Castle Lunita
-     subtitle: Breathtaking new uluwatu villas
    - background_image: /images/temporary-images/bai-3.jpg
      image_focus: center
      title: Candidasa Villa Blanca
@@ -46,7 +42,7 @@ seo:
         {% for item in page.heading.image %}
         <div class="slider-item bg-image-style min-h-[85vh] relative"
              style="background-image: url('{{ item.background_image }}'); background-position: {{ item.image_focus }};">
-            <div class="text-overlay p-8 bg-medium/80 text-light absolute bottom-0 left-0">
+            <div class="text-overlay p-8 bg-light text-dark border-t-2 border-x-2 border-dark absolute bottom-0 left-0">
                 <p class="serif-md">{{item.title}}</p>
                 <p class="text-[1.1rem]">{{item.subtitle}}</p>
             </div>
@@ -55,17 +51,15 @@ seo:
     </div>
 </section>
 
-
-
 <!-- About -->
-<section class="grid grid-cols-5">
-    <div id="parallax-background" class="col-span-3 bg-no-repeat bg-contain parallax-background" style="background-image: url('{{page.about.background-image.background_image}}'); background-position: right bottom;">
+<section class="grid grid-cols-5 border-2 border-dark">
+    <div id="parallax-background" class="col-span-3 bg-no-repeat bg-contain" style="background-image: url('{{page.about.background-image.background_image}}'); background-position: right bottom;">
         <div class="flex items-center" style="height: 100%;">
             <p class="sans-md text-dark p-10p w-[80%]">{{page.about.description_html}}</p>
         </div>
     </div>    
     
-    <div class="col-span-2 bg-dark text-light p-10p">
+    <div class="col-span-2 p-10p border-l-2 border-dark text-dark">
         <h2 class="serif-md capitalize">Work with us</h2>
         <p>Let's Connect</p>
         <form class="text-[1.1rem]">
