@@ -656,6 +656,10 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgb(251 249 248 / var(--tw-bg-opacity));
 }
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(122 139 121 / var(--tw-bg-opacity));
+}
 .bg-contain {
   background-size: contain;
 }
@@ -733,6 +737,10 @@ ul {
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(122 139 121 / var(--tw-text-opacity));
+}
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(251 249 248 / var(--tw-text-opacity));
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
