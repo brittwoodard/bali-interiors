@@ -18,6 +18,7 @@ module.exports = {
           '15p': '15%',
         },
         colors: {
+          'x-light': '#f8f7f5',
           'light': '#e9e3dd',
           'medium': '#f0e1dd',
           'dark': '#7a8b79',
