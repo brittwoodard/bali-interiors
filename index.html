@@ -138,29 +138,32 @@ seo:
 <!-- Articles Section -->
 <section class="grid grid-cols-2 border-2 border-dark">
     <!-- Build Diary -->
-    <div id="featured-series" class="p-10p">
-        <div class="bg-image-style h-[30vh]" style="background-image: url('#');">
+    <div id="featured-series" class="p-10p flex items-center">
+        <div>
+            <div class="bg-image-style min-h-[50vh] border-2 border-dark" style="background-image: url('/images/temporary-images/bai-1.jpg');">
+            </div>
+            <h2 class="serif-md border-b border-black py-4">Build Diary</h2>
+            <p>Read all about the process of building a villa in Bali. We meet different people and accompany them during
+                the building process with all ups and downs.</p>
+            <a href="#" class="link">Read more</a>
         </div>
-        <h2>Build Diary</h2>
-        <p>Read all about the process of building a villa in Bali. We meet different people and accompany them during
-            the building process with all ups and downs.</p>
-        <a href="#">Read more</a>
     </div>
     <!-- Latest Articles -->
     <div id="latest-articles" class="p-10p border-l-2 border-dark">
+        <h2 class="serif-md pb-4 mb-8 border-b border-black">Latest Articles</h2>
         <div class="columns-2">
 
-            {% for post in site.posts limit:8 %}
+            {% for post in site.posts limit:6 %}
 
-            <a class="reak-inside-avoid block mb-4" href="{{post.url}}">
-                <div class="bg-image-style min-h-[20vw] relative">
+            <a class="reak-inside-avoid block mb-8" href="{{post.url}}">
+                <div class="bg-image-style min-h-[20vw] relative border-2 border-dark mb-4">
                     <img src="{{post.featured_image}}" alt="{{post.title}}"
                         class="absolute inset-0 w-full h-full object-cover">
                 </div>
                 <div class="relative">
-                    <h2>{{post.title}}</h2>
+                    <h2 class="uppercase">{{post.title}}</h2>
                     <p class="line-clamp-2 mb-4">{{post.description}}</p>
-                    <p class="underline-offset-4">Read More</p>
+                    <p class="link inline-block underline-offset-4">Read More</p>
                 </div>
             </a>
 
@@ -168,7 +171,7 @@ seo:
 
         </div>
         <div class="w-full text-center">
-            <a href="#" class="button mt-5p mx-5p">Read all articles</a>
+            <a href="#" class="link">Read all articles</a>
         </div>
     </div>
 </section>

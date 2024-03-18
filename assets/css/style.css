@@ -330,6 +330,7 @@ body {
   background-color: rgb(233 227 221 / var(--tw-bg-opacity));
   font-family: macha, sans-serif;
   font-weight: 300;
+  letter-spacing: 0.025em;
 }
 nav a:hover {
     color: var(--dark);
@@ -451,7 +452,8 @@ ul {
 .serif-md {
   margin-bottom: 0.5em;
   font-family: kepler-std, serif;;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.025em;
 }
 .button-form {
     border: 1px solid var(--light);
@@ -460,6 +462,23 @@ ul {
   }
 .button-form:hover {
   background-color: rgb(233 227 221 / 0.3);
+  transition-duration: 500ms;
+}
+.link {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(36 41 36 / var(--tw-border-opacity));
+  padding-bottom: 0.5rem;
+  font-family: kepler-std, serif;;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-style: italic;
+}
+.link:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(181 109 89 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(181 109 89 / var(--tw-text-opacity));
   transition-duration: 500ms;
 }
 .logo {
@@ -537,6 +556,9 @@ ul {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -561,6 +583,9 @@ ul {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .flex {
   display: flex;
 }
@@ -572,9 +597,6 @@ ul {
 }
 .h-\[100\%\] {
   height: 100%;
-}
-.h-\[30vh\] {
-  height: 30vh;
 }
 .h-full {
   height: 100%;
@@ -651,6 +673,10 @@ ul {
 .border-t-2 {
   border-top-width: 2px;
 }
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(36 41 36 / var(--tw-border-opacity));
+}
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(122 139 121 / var(--tw-border-opacity));
@@ -667,9 +693,9 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgb(122 139 121 / var(--tw-bg-opacity));
 }
-.bg-feature {
+.bg-feature-alt {
   --tw-bg-opacity: 1;
-  background-color: rgb(181 109 89 / var(--tw-bg-opacity));
+  background-color: rgb(189 125 107 / var(--tw-bg-opacity));
 }
 .bg-light {
   --tw-bg-opacity: 1;
@@ -689,10 +715,6 @@ ul {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-feature-alt {
-  --tw-bg-opacity: 1;
-  background-color: rgb(189 125 107 / var(--tw-bg-opacity));
 }
 .bg-contain {
   background-size: contain;
@@ -734,6 +756,10 @@ ul {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .py-8 {
   padding-top: 2rem;

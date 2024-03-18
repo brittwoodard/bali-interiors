@@ -16,7 +16,7 @@
 @layer base {
 
   body {
-    @apply bg-light font-sans font-light
+    @apply bg-light font-sans font-light tracking-wide
   }
 
   nav a:hover {
@@ -50,7 +50,7 @@
 @layer components {
 
   .serif-md {
-    @apply font-serif text-[2rem] mb-[0.5em]
+    @apply font-serif text-[1.6rem] mb-[0.5em] tracking-wide
   }
 
   .sans-md {
@@ -65,6 +65,10 @@
 
   .button-form:hover {
     @apply bg-light/30 duration-500
+  }
+
+  .link {
+    @apply font-serif italic border-b border-black capitalize text-[1.1rem] pb-2 hover:text-feature hover:duration-500 hover:border-feature
   }
 
   .logo {
