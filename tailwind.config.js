@@ -8,8 +8,8 @@ module.exports = {
     ],
     theme: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['GFS Didot', 'serif;'],
+        sans: ['macha', 'sans-serif'],
+        serif: ['kepler-std', 'serif;'],
       },
       extend: {
         spacing: {
@@ -18,10 +18,11 @@ module.exports = {
           '15p': '15%',
         },
         colors: {
-          'light': '#fbf9f8',
+          'light': '#e9e3dd',
           'medium': '#f0e1dd',
           'dark': '#7a8b79',
           'feature': '#b56d59',
+          'feature-alt': '#bd7d6b',
           'black': '#242924',
         },
         aspectRatio: {
