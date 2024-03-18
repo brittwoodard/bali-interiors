@@ -27,6 +27,10 @@ about:
   background-image: 
     background_image: /images/temporary-images/bali-9.png
     background_position: right
+articles: 
+  featured-series: 
+    heading: Build Diary
+    description_html: Read all about the process of building a villa in Bali. We meet different people and accompany them during the building process with all ups and downs.
 seo:
   title: Bali Interiors
   description:
@@ -60,8 +64,8 @@ seo:
     </div>    
     
     <div class="col-span-2 p-10p bg-dark text-light">
-        <h2 class="serif-md capitalize">Work with us</h2>
-        <p>Let's Connect</p>
+        <h2 class="sans-sm mb-2">Work with us</h2>
+        <p class="serif-sm italic lowercase">Let's Connect</p>
         <form class="text-[1.1rem]">
             <div class="mb-4">
                 <input type="text" id="first-name" name="first-name" class="block w-full border-b border-light bg-transparent">
@@ -122,9 +126,9 @@ seo:
 <section id="retreat" class="grid grid-cols-2 p-10p bg-feature-alt text-light">
     <div class="pr-12 flex items-center">
         <div>
-            <h2 class="serif-md border-b border-light pb-4">Design & Interiors Retreat in Bali</h2>
+            <h2 class="sans-sm border-b border-light pb-4">Design & Interiors Retreat in Bali</h2>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-            <a href="#" class="button-form">Learn More</a>
+            <a href="#" class="link">Learn More</a>
         </div>
     </div>
     <div class=”youtube-container”>
@@ -137,20 +141,19 @@ seo:
 
 <!-- Articles Section -->
 <section class="grid grid-cols-2 border-2 border-dark">
-    <!-- Build Diary -->
+    <!-- Featured Series -->
     <div id="featured-series" class="p-10p flex items-center">
         <div>
             <div class="bg-image-style min-h-[50vh] border-2 border-dark" style="background-image: url('/images/temporary-images/bai-1.jpg');">
             </div>
-            <h2 class="serif-md border-b border-black py-4">Build Diary</h2>
-            <p>Read all about the process of building a villa in Bali. We meet different people and accompany them during
-                the building process with all ups and downs.</p>
+            <h2 class="sans-sm border-b border-black py-4">{{page.articles.featured-series.heading}}</h2>
+            <p>{{page.articles.featured-series.description_html}}</p>
             <a href="#" class="link">Read more</a>
         </div>
     </div>
     <!-- Latest Articles -->
     <div id="latest-articles" class="p-10p border-l-2 border-dark">
-        <h2 class="serif-md pb-4 mb-8 border-b border-black">Latest Articles</h2>
+        <h2 class="sans-sm pb-4 mb-8 border-b border-black">Latest Articles</h2>
         <div class="columns-2">
 
             {% for post in site.posts limit:6 %}

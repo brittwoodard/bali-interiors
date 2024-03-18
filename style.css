@@ -18,7 +18,7 @@
 @layer base {
 
   body {
-    @apply bg-light font-sans font-light tracking-wide
+    @apply bg-light font-sans tracking-wide font-normal text-black
   }
 
   nav a:hover {
@@ -55,14 +55,19 @@
     @apply font-serif text-[1.6rem] mb-[0.5em] tracking-wide
   }
 
+  .sans-sm {
+    @apply font-sans text-[1.5rem] uppercase tracking-wide
+  }
+
   .sans-md {
     @apply font-sans text-[2rem]
   }
 
   .button-form {
-    border: 1px solid var(--light);
+    border: 1px solid inherit;
     padding: 0.5rem 1rem;
     display: inline-block;
+    text-transform: uppercase;
   }
 
   .button-form:hover {
@@ -70,7 +75,7 @@
   }
 
   .link {
-    @apply font-serif italic border-b border-black capitalize text-[1.1rem] pb-2 hover:text-feature hover:duration-500 hover:border-feature
+    @apply font-serif italic border-b border-inherit capitalize text-[1.1rem] pb-2 hover:text-feature hover:duration-500 hover:border-feature
   }
 
   .logo {

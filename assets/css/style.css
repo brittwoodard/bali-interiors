@@ -329,8 +329,10 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(233 227 221 / var(--tw-bg-opacity));
   font-family: macha, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(39 45 39 / var(--tw-text-opacity));
 }
 nav a:hover {
     color: var(--dark);
@@ -455,10 +457,17 @@ ul {
   font-size: 1.6rem;
   letter-spacing: 0.025em;
 }
+.sans-sm {
+  font-family: macha, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
 .button-form {
-    border: 1px solid var(--light);
+    border: 1px solid inherit;
     padding: 0.5rem 1rem;
     display: inline-block;
+    text-transform: uppercase;
   }
 .button-form:hover {
   background-color: rgb(233 227 221 / 0.3);
@@ -466,8 +475,7 @@ ul {
 }
 .link {
   border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(36 41 36 / var(--tw-border-opacity));
+  border-color: inherit;
   padding-bottom: 0.5rem;
   font-family: kepler-std, serif;;
   font-size: 1.1rem;
@@ -668,7 +676,7 @@ ul {
 }
 .border-black {
   --tw-border-opacity: 1;
-  border-color: rgb(36 41 36 / var(--tw-border-opacity));
+  border-color: rgb(39 45 39 / var(--tw-border-opacity));
 }
 .border-dark {
   --tw-border-opacity: 1;
@@ -754,6 +762,10 @@ ul {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+.py-10p {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -761,10 +773,6 @@ ul {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.py-10p {
-  padding-top: 10%;
-  padding-bottom: 10%;
 }
 .pb-4 {
   padding-bottom: 1rem;
@@ -798,8 +806,14 @@ ul {
 .uppercase {
   text-transform: uppercase;
 }
+.lowercase {
+  text-transform: lowercase;
+}
 .capitalize {
   text-transform: capitalize;
+}
+.italic {
+  font-style: italic;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
@@ -830,6 +844,11 @@ ul {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
+
+.hover\:text-dark:hover {
+  --tw-text-opacity: 1;
+  color: rgb(122 139 121 / var(--tw-text-opacity));
+}
 
 @media (min-width: 768px) {
   .md\:col-span-2 {

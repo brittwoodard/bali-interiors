@@ -24,7 +24,7 @@ module.exports = {
           'dark': '#7a8b79',
           'feature': '#b56d59',
           'feature-alt': '#bd7d6b',
-          'black': '#242924',
+          'black': '#272d27',
         },
         aspectRatio: {
           'landscape': '2 / 1 ',
