@@ -98,5 +98,17 @@
     height: 100%;
   }
 
+  #latest-articles {
+    height: 100vh;
+    /* Or adjust to the desired height */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+  }
+
+  #featured-series {
+    position: sticky;
+    top: 0;
+}
+
 
 }

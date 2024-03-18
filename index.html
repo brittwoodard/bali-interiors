@@ -55,7 +55,7 @@ seo:
 <section class="grid grid-cols-5 border-2 border-dark">
     <div id="parallax-background" class="col-span-3 bg-no-repeat bg-contain" style="background-image: url('{{page.about.background-image.background_image}}'); background-position: right bottom;">
         <div class="flex items-center h-[100%]">
-            <p class="sans-md text-dark p-10p w-[80%]">{{page.about.description_html}}</p>
+            <p class="font-sans text-[1.6rem] text-dark p-10p w-[80%]">{{page.about.description_html}}</p>
         </div>
     </div>    
     
@@ -136,9 +136,9 @@ seo:
 </section>
 
 <!-- Articles Section -->
-<section class="grid grid-cols-2">
+<section class="grid grid-cols-2 border-2 border-dark">
     <!-- Build Diary -->
-    <div>
+    <div id="featured-series" class="p-10p">
         <div class="bg-image-style h-[30vh]" style="background-image: url('#');">
         </div>
         <h2>Build Diary</h2>
@@ -147,7 +147,7 @@ seo:
         <a href="#">Read more</a>
     </div>
     <!-- Latest Articles -->
-    <div>
+    <div id="latest-articles" class="p-10p border-l-2 border-dark">
         <div class="columns-2">
 
             {% for post in site.posts limit:8 %}

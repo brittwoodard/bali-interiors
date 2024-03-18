@@ -20,3 +20,5 @@ window.addEventListener('scroll', function() {
         elem.style.backgroundPositionY = offset + "px";
     }
 });
+
+// Latest Articles Scroll
