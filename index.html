@@ -180,28 +180,24 @@ seo:
 </section>
 
 <!-- Peak In Paradise -->
-<section class="bg-x-light py-10p">
-    <div class="flex justify-between mb-4">
-        <h2 class="serif-md text-center">Recently on A Peek In Paradise</h2>
+<section class="bg-x-light p-10p">
+    <div class="mb-4">
+        <h2 class="serif-md text-center">Recently on <em>A Peek In Paradise</em></h2>
     </div>
     <div class="grid grid-cols-3">
-
+    
         {% assign series_posts = site.posts | where: 'series', 'a-peek-in-paradise' %}
 
         {% for post in series_posts limit:3 %}
-
+    
         <div>
-            <a class="break-inside-avoid block mb-4" href="{{post.url}}">
-                <div class="bg-image-style min-h-[20vw] relative">
-                    <img src="{{post.featured_image}}" alt="{{post.title}}"
-                        class="absolute inset-0 w-full h-full object-cover">
-                </div>
-                <div class="relative">
-                    <h2>{{post.title}}</h2>
-                    <p class="line-clamp-2 mb-4"> {{post.description}}</p>
-                    <p>Read More</p>
-                </div>
-            </a>
+            <div class="bg-image-style min-h-[20vw] relative border-2 border-dark mb-4" style="background-image: url({{post.featured_image}});">
+            </div>
+            <div class="relative">
+                <h2 class="uppercase">{{post.title}}</h2>
+                <p class="line-clamp-2 mb-4"> {{post.description}}</p>
+                <a href="{{post.url}}" class="link">Read More</p>
+            </div>
         </div>
 
         {% endfor %}
