@@ -128,7 +128,7 @@ seo:
         <div>
             <h2 class="sans-sm border-b border-light pb-4">Design & Interiors Retreat in Bali</h2>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-            <a href="#" class="link">Learn More</a>
+            <a href="#" class="link-light">Learn More</a>
         </div>
     </div>
     <div class=”youtube-container”>
@@ -156,7 +156,7 @@ seo:
         <h2 class="sans-sm pb-4 mb-8 border-b border-black">Latest Articles</h2>
         <div class="columns-2">
 
-            {% for post in site.posts limit:6 %}
+            {% for post in site.posts limit:8 %}
 
             <a class="break-inside-avoid block mb-8" href="{{post.url}}">
                 <div class="bg-image-style min-h-[20vw] relative border-2 border-dark mb-4">
@@ -184,15 +184,14 @@ seo:
     <div class="mb-4">
         <h2 class="serif-md text-center">Recently on <em>A Peek In Paradise</em></h2>
     </div>
-    <div class="grid grid-cols-3">
+    <div class="flex justify-between">
     
         {% assign series_posts = site.posts | where: 'series', 'a-peek-in-paradise' %}
 
         {% for post in series_posts limit:3 %}
     
-        <div>
-            <div class="bg-image-style min-h-[20vw] relative border-2 border-dark mb-4
-            {% cycle 'p-0', 'mx-8', 'p-0' %}" style="background-image: url({{post.featured_image}});">
+        <div class="{% cycle 'p-0', 'mx-8', 'p-0' %}">
+            <div class="bg-image-style min-h-[20vh] relative border-2 border-dark mb-4" style="background-image: url({{post.featured_image}});">
             </div>
             <div class="relative">
                 <h2 class="uppercase">{{post.title}}</h2>

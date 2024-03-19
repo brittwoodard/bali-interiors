@@ -75,7 +75,11 @@
   }
 
   .link {
-    @apply font-serif italic border-b border-inherit capitalize text-[1.1rem] pb-2 hover:text-feature hover:duration-500 hover:border-feature
+    @apply font-serif italic border-b border-black capitalize text-[1.1rem] pb-2 hover:text-feature hover:duration-500 hover:border-feature
+  }
+
+  .link-light {
+    @apply font-serif italic border-b border-light capitalize text-[1.1rem] pb-2 hover:text-feature hover:duration-500 hover:border-feature
   }
 
   .logo {
@@ -108,16 +112,6 @@
     width: 100%;
     height: 100%;
   }
-
-  /* #latest-articles {
-    height: 100vh;
-    overflow-y: auto;
-  }
-
-  #featured-series {
-    position: sticky;
-    top: 0;
-} */
 
 
 }

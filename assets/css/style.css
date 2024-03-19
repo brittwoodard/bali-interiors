@@ -476,7 +476,8 @@ ul {
 }
 .link {
   border-bottom-width: 1px;
-  border-color: inherit;
+  --tw-border-opacity: 1;
+  border-color: rgb(39 45 39 / var(--tw-border-opacity));
   padding-bottom: 0.5rem;
   font-family: kepler-std, serif;;
   font-size: 1.1rem;
@@ -484,6 +485,23 @@ ul {
   font-style: italic;
 }
 .link:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(181 109 89 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(181 109 89 / var(--tw-text-opacity));
+  transition-duration: 500ms;
+}
+.link-light {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(233 227 221 / var(--tw-border-opacity));
+  padding-bottom: 0.5rem;
+  font-family: kepler-std, serif;;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-style: italic;
+}
+.link-light:hover {
   --tw-border-opacity: 1;
   border-color: rgb(181 109 89 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
@@ -517,15 +535,6 @@ ul {
     width: 100%;
     height: 100%;
   }
-/* #latest-articles {
-    height: 100vh;
-    overflow-y: auto;
-  }
-
-  #featured-series {
-    position: sticky;
-    top: 0;
-} */
 .absolute {
   position: absolute;
 }
@@ -614,6 +623,12 @@ ul {
 .h-full {
   height: 100%;
 }
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+.min-h-\[20vh\] {
+  min-height: 20vh;
+}
 .min-h-\[20vw\] {
   min-height: 20vw;
 }
@@ -622,9 +637,6 @@ ul {
 }
 .min-h-\[85vh\] {
   min-height: 85vh;
-}
-.min-h-\[100vh\] {
-  min-height: 100vh;
 }
 .w-10 {
   width: 2.5rem;
@@ -664,11 +676,11 @@ ul {
 .items-center {
   align-items: center;
 }
-.justify-start {
-  justify-content: flex-start;
-}
 .justify-center {
   justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .justify-around {
   justify-content: space-around;
@@ -758,6 +770,9 @@ ul {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-0 {
+  padding: 0px;
+}
 .p-10p {
   padding: 10%;
 }
@@ -769,9 +784,6 @@ ul {
 }
 .p-8 {
   padding: 2rem;
-}
-.p-0 {
-  padding: 0px;
 }
 .px-16 {
   padding-left: 4rem;
@@ -796,10 +808,6 @@ ul {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
