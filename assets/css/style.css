@@ -619,6 +619,9 @@ ul {
 .min-h-\[85vh\] {
   min-height: 85vh;
 }
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
 .w-10 {
   width: 2.5rem;
 }
@@ -648,6 +651,9 @@ ul {
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.flex-col {
+  flex-direction: column;
+}
 .items-start {
   align-items: flex-start;
 }
@@ -656,6 +662,9 @@ ul {
 }
 .justify-start {
   justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-around {
   justify-content: space-around;
