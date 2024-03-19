@@ -191,7 +191,8 @@ seo:
         {% for post in series_posts limit:3 %}
     
         <div>
-            <div class="bg-image-style min-h-[20vw] relative border-2 border-dark mb-4" style="background-image: url({{post.featured_image}});">
+            <div class="bg-image-style min-h-[20vw] relative border-2 border-dark mb-4
+            {% cycle 'p-0', 'mx-8', 'p-0' %}" style="background-image: url({{post.featured_image}});">
             </div>
             <div class="relative">
                 <h2 class="uppercase">{{post.title}}</h2>
