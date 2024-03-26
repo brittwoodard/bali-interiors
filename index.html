@@ -30,12 +30,20 @@ about:
 articles: 
   featured-series: 
     heading: Build Diary
-    description_html: Read all about the process of building a villa in Bali. We meet different people and accompany them during the building process with all ups and downs.
+    description: Read all about the process of building a villa in Bali. We meet different people and accompany them during the building process with all ups and downs.
 peek-in-paradise: 
- - video: 
-   title: 
-   description_html: 
-
+ - video-iframe-link: https://www.youtube.com/embed/LZTO1fFdvRM?si=G8fum1iH4NFy3YAW
+   title: Alena Zlobina's Soulmoon Villa
+   description: Alena created this villa as fusion of modern elegance and Feng Shui principles, showcasing a minimalist design with vibrant colors and impeccable finishes. Be inspired by the unique interior design and open spaces.
+ - video-iframe-link: https://www.youtube.com/embed/uBjQ9Ci3rNI?si=9Tin33ClQ7n4hjpG
+   title: TV Producer Julie Marot's Tropical Bali Home
+   description: Inspired by the chic vibes of California Palm Springs, Villa Panas Sekali boasts palm trees, stone walls, and bright wood accents that exude effortless style. With its family-friendly design and kid-friendly amenities, it’s the perfect retreat for all ages.
+ - video-iframe-link: https://www.youtube.com/embed/QZhkge-ltFg?si=V4lSE86q4i8jtv5e
+   title: Maja Canggu
+   description: The last episode of “A Peek of Paradise, Hotel Edition” is here! Join us as we explore the buzzworthy Maja Canggu. Maja Canggu is proof of their love for Greece. Having spent almost every summer there, they aim to bring that atmosphere back to Bali. With flowing curtains, bright white walls, and a turquoise pool, this boutique hotel promises the ideal backdrop for your next Instagram post.
+ - video-iframe-link: https://www.youtube.com/embed/PvmgeQ9oE6E?si=N2rpNZ1cuHX2z0jf
+   title: The Jing
+   description: Come with us on this exclusive tour of a luxury oasis in North Bali. In this episode of "A Peek in Paradise, Hotel Edition," we venture 2.5 hours north from the bustling Canggu. Hidden along the pristine shores of Tejakula, the Jing is an oceanfront property that defines the ultimate luxury oasis. It features three meticulously appointed bedrooms, each as impeccable as the next. The Mediterranean-Asian fusion architecture, characterized by whitewashed walls and tasteful wood accents, immerses you in a realm of timeless sophistication.
 seo:
   title: Bali Interiors
   description:
@@ -187,43 +195,23 @@ seo:
 <!-- Peak In Paradise -->
 <section class="bg-x-light p-10p">
     <div class="mb-4">
-        <h2 class="serif-md text-center">Recently on <em>A Peek In Paradise</em></h2>
+        <h2 class="sans-sm text-center">Recently on <span class="font-serif capitalize italic">A Peek In Paradise</span></h2>
     </div>
-    <div class="flex justify-between">
-    
-        {% assign series_posts = site.posts | where: 'series', 'a-peek-in-paradise' %}
+    <div class="episodes-container">
 
-        {% for post in series_posts limit:3 %}
-    
-        <div class="{% cycle 'p-0', 'mx-16', 'p-0' %}">
-            <div class="bg-image-style min-h-[25vh] relative border-2 border-dark mb-4" style="background-image: url({{post.featured_image}});">
+        {% for item in page.peek-in-paradise %}
+        <div>
+            <div class="video-container">
+                <iframe src="{{item.video-iframe-link}}" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="relative">
-                <h2 class="uppercase">{{post.title}}</h2>
-                <p class="line-clamp-2 mb-4"> {{post.description}}</p>
-                <a href="{{post.url}}" class="link">Read More</a>
-            </div>
+            <div class="mt-4">
+                <h3 class="uppercase">{{item.title}}</h3>
+                <p class="line-clamp-2">{{item.description}}</p>
+            </div>     
         </div>
-
         {% endfor %}
 
-        {% assign series_posts = site.posts | where: 'series', 'a-peek-in-paradise' %}
-
     </div>
-</section>
-
-<section class="p-10p">
-    <div class="episodes-container">
-        <div>
-            <div class=”youtube-container”>
-                <div class='embed-container'>
-                    <iframe src='https://www.youtube.com/embed/LZTO1fFdvRM?si=G8fum1iH4NFy3YAW' frameborder='0' allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <div>your content</div>
-        <div>your content</div>
-      </div>
 </section>
 
 <!-- Work Featured In -->
