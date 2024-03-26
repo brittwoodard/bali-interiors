@@ -52,6 +52,31 @@ featured-work:
    - image_path: /images/logos/logo-3.png
    - image_path: /images/logos/logo-4.png
    - image_path: /images/logos/logo-5.png
+shop: 
+  heading: BI Home shop
+  description_html: We thrive to bring a fusion of island life and sophistication to your home. Slow paced homewares that have been carefully curated, designed by our team and handmade by Indonesian craftsmen and artisans.
+  collection: 
+   - background-image: 
+       image_path: https://www.bali-interiors.com/wp-content/uploads/2022/03/BaliInteriors-sunset-print-bali_4.jpg
+       image_focus: center
+     title: Print collection
+     button: 
+       url: https://shop.bali-interiors.com/collections/all-prints
+       text: Shop Now 
+   - background-image: 
+       image_path: https://www.bali-interiors.com/wp-content/uploads/2022/03/BaliInteriors-cushion-covers.jpg
+       image_focus: center
+     title: Cushion Covers
+     button: 
+       url: https://shop.bali-interiors.com/collections/all-prints
+       text: Shop Now 
+   - background-image: 
+       image_path: www.bali-interiors.com/wp-content/uploads/2022/03/BaliInteriors-throws.jpg
+       image_focus: center
+     title: Throw collection
+     button: 
+       url: www.bali-interiors.com/wp-content/uploads/2022/03/BaliInteriors-throws.jpg
+       text: Shop Now 
 seo:
   title: Bali Interiors
   description:
@@ -223,7 +248,7 @@ seo:
 </section>
 
 <!-- Work Featured In -->
-<section class="p-5p">
+<section class="p-5p border-y-2 border-dark">
     <h2 class="font-serif text-[1.6rem] text-dark mb-8">{{page.featured-work.title_html}}</h2>
     <div class="flex justify-between items-center flex-wrap">
         {% for item in page.featured-work.logos %}
@@ -233,28 +258,20 @@ seo:
 </section>
 
 <!-- Shop -->
-<section>
-    <h2>BI Home shop</h2>
-    <p>We thrive to bring a fusion of island life and sophistication to your home. Slow paced homewares that have been
-        carefully curated, designed by our team and handmade by Indonesian craftsmen and artisans.</p>
-    <div class="grid grid-cols-3">
-        <!-- Prints -->
-        <div class="bg-image-style min-h-[50vh]" style="background-image: url('#');">
-            <h4>Prints collection</h4>
-            <a class="button" href="#">Shop</a>
+<section class="p-10p bg-feature-alt">
+    <div class="text-center text-x-light mb-8">
+        <h2 class="sans-sm">{{page.shop.heading}}</h2>
+        <p>{{page.shop.description_html}}</p>
+    </div>
+    <div class="grid grid-cols-3 gap-8">
+        {% for item in page.shop.collection %}
+        <div class="bg-image-style aspect-portrait border-2 border-dark middle-center" style="background-image: url('{{ item.background-image.image_path }}'); background-position: {{ item.background-image.image_focus }};">
+            <div class="text-dark text-center">
+                <h4 class="sans-sm">{{ item.title }}</h4>
+                <a class="italic hover:text-x-light hover:duration-500" href="{{ item.button.url }}">{{ item.button.text }} →</a>
+            </div>
         </div>
-
-        <!-- Cushon Covers -->
-        <div class="bg-image-style min-h-[50vh]" style="background-image: url('#');">
-            <h4>Cushon covers</h4>
-            <a class="button" href="#">Shop</a>
-        </div>
-
-        <!-- Throws -->
-        <div class="bg-image-style min-h-[50vh]" style="background-image: url('#');">
-            <h4>Throws collection</h4>
-            <a class="button" href="#">Shop</a>
-        </div>
+        {% endfor %}
     </div>
 </section>
 

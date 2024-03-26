@@ -63,6 +63,10 @@
     @apply font-sans text-[2rem]
   }
 
+  .middle-center {
+    @apply flex items-center justify-center
+  }
+
   .button-form {
     border: 1px solid inherit;
     padding: 0.5rem 1rem;
