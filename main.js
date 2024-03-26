@@ -11,6 +11,17 @@ $('.slider-container').slick({
 	pauseOnHover: false, 
 });
 
+$('.episodes-container').slick({
+	autoplay: false, 
+	speed: 500, 
+	arrows: true, 
+	accessibility: true, 
+	dots: false, 
+	fade: false, 
+	infinite: false, 
+	pauseOnHover: false, 
+});
+
 // Parallax
 window.addEventListener('scroll', function() {
     var offset = window.pageYOffset / 2;
@@ -20,5 +31,3 @@ window.addEventListener('scroll', function() {
         elem.style.backgroundPositionY = offset + "px";
     }
 });
-
-// Latest Articles Scroll

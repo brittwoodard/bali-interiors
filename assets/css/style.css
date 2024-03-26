@@ -571,9 +571,13 @@ ul {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -626,17 +630,20 @@ ul {
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
-.min-h-\[20vh\] {
-  min-height: 20vh;
-}
 .min-h-\[20vw\] {
   min-height: 20vw;
+}
+.min-h-\[30vh\] {
+  min-height: 30vh;
 }
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
 .min-h-\[85vh\] {
   min-height: 85vh;
+}
+.min-h-\[25vh\] {
+  min-height: 25vh;
 }
 .w-10 {
   width: 2.5rem;

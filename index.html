@@ -190,8 +190,8 @@ seo:
 
         {% for post in series_posts limit:3 %}
     
-        <div class="{% cycle 'p-0', 'mx-8', 'p-0' %}">
-            <div class="bg-image-style min-h-[20vh] relative border-2 border-dark mb-4" style="background-image: url({{post.featured_image}});">
+        <div class="{% cycle 'p-0', 'mx-16', 'p-0' %}">
+            <div class="bg-image-style min-h-[25vh] relative border-2 border-dark mb-4" style="background-image: url({{post.featured_image}});">
             </div>
             <div class="relative">
                 <h2 class="uppercase">{{post.title}}</h2>
@@ -202,18 +202,28 @@ seo:
 
         {% endfor %}
 
+        {% assign series_posts = site.posts | where: 'series', 'a-peek-in-paradise' %}
+
     </div>
+</section>
+
+<section>
+    <div class="episodes-container">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+      </div>
 </section>
 
 <!-- Work Featured In -->
 <section>
     <h2>Our photographs have been published in</h2>
     <div class="grid grid-cols-5 gap-4">
-        <img src="/images/logos/logo-1.webp">
-        <img src="/images/logos/logo-2.webp">
-        <img src="/images/logos/logo-3.webp">
-        <img src="/images/logos/logo-4.webp">
-        <img src="/images/logos/logo-5.webp">
+        <img src="/images/logos/logo-1.png">
+        <img src="/images/logos/logo-2.png">
+        <img src="/images/logos/logo-3.png">
+        <img src="/images/logos/logo-4.png">
+        <img src="/images/logos/logo-5.png">
     </div>
 </section>
 
