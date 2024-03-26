@@ -31,6 +31,11 @@ articles:
   featured-series: 
     heading: Build Diary
     description_html: Read all about the process of building a villa in Bali. We meet different people and accompany them during the building process with all ups and downs.
+peek-in-paradise: 
+ - video: 
+   title: 
+   description_html: 
+
 seo:
   title: Bali Interiors
   description:
@@ -207,7 +212,8 @@ seo:
     </div>
 </section>
 
-<section>
+<section class="p-10p">
+    {% for item in page.episodes %}
     <div class="episodes-container">
         <div>your content</div>
         <div>your content</div>

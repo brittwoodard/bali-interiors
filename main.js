@@ -14,6 +14,7 @@ $('.slider-container').slick({
 $('.episodes-container').slick({
 	autoplay: false, 
 	speed: 500, 
+	slidesToShow: 3,
 	arrows: true, 
 	accessibility: true, 
 	dots: false, 
