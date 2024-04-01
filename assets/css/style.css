@@ -696,9 +696,6 @@ ul {
 .items-center {
   align-items: center;
 }
-.justify-center {
-  justify-content: center;
-}
 .justify-between {
   justify-content: space-between;
 }
@@ -907,11 +904,6 @@ ul {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
-
-.hover\:text-dark:hover {
-  --tw-text-opacity: 1;
-  color: rgb(122 139 121 / var(--tw-text-opacity));
-}
 
 .hover\:text-x-light:hover {
   --tw-text-opacity: 1;

@@ -44,14 +44,6 @@ peek-in-paradise:
  - video-iframe-link: https://www.youtube.com/embed/PvmgeQ9oE6E?si=N2rpNZ1cuHX2z0jf
    title: The Jing
    description: Come with us on this exclusive tour of a luxury oasis in North Bali. In this episode of "A Peek in Paradise, Hotel Edition," we venture 2.5 hours north from the bustling Canggu. Hidden along the pristine shores of Tejakula, the Jing is an oceanfront property that defines the ultimate luxury oasis. It features three meticulously appointed bedrooms, each as impeccable as the next. The Mediterranean-Asian fusion architecture, characterized by whitewashed walls and tasteful wood accents, immerses you in a realm of timeless sophistication.
-featured-work: 
-  title_html: Our photographs have been <em>published</em> in...
-  logos: 
-   - image_path: /images/logos/logo-1.png
-   - image_path: /images/logos/logo-2.png
-   - image_path: /images/logos/logo-3.png
-   - image_path: /images/logos/logo-4.png
-   - image_path: /images/logos/logo-5.png
 shop: 
   heading: BI Home shop
   description_html: We thrive to bring a fusion of island life and sophistication to your home. Slow paced homewares that have been carefully curated, designed by our team and handmade by Indonesian craftsmen and artisans.
@@ -247,11 +239,10 @@ seo:
     </div>
 </section>
 
-<!-- Work Featured In -->
+<!-- Press -->
 <section class="p-5p border-y-2 border-dark">
-    <h2 class="font-serif text-[1.6rem] text-dark mb-8">{{page.featured-work.title_html}}</h2>
     <div class="flex justify-between items-center flex-wrap">
-        {% for item in page.featured-work.logos %}
+        {% for item in site.data.information.press %}
         <img src="{{item.image_path}}" class="w-[10vw]">
         {% endfor %}
     </div>

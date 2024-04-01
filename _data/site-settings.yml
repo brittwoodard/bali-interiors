@@ -1,13 +1,37 @@
-navigation: 
-  - url: '#'
-    title: Bali
-  - url: '#'
-    title: Lifestyle
-  - url: '#'
-    title: Shop
-  - url: '#'
-    title: Videos
-  - url: '#'
-    title: Podcast
-  - url: '#'
-    title: Retreat
+general:
+  site-name: Your Website Name
+  form-email: hello@websitename.com
+  logo_path: /images/brand_logo.png
+  logo-max-width: 400px
+  logo-text: YOUR LOGO
+seo:
+  site_name: 
+  title:
+  type: website
+  description: 
+  keywords: 
+  social_image:
+  author: 
+  twitter_card: summary
+  twitter_description: 
+social:
+  instagram_username: kliohstudio
+  facebook_username:
+  pinterest_username:
+  linkedin_username:
+  twitter_username: 
+  tiktok_username: 
+  youtube_username:
+design:
+  accent_color: '#008000'
+  dark_color:
+  medium_color:
+  light_color:
+  v-light_color: '#FFFFFF'
+brand:
+  primary_logo_path: /images/brand_logo.png
+  secondary_logo_path:
+  submark_logo_path:
+technical:
+  google-analytics_embed:
+  instagram_widget_embed:
