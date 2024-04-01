@@ -44,6 +44,10 @@
     list-style-type: disc;
   }
 
+  footer nav a {
+    @apply block
+  }
+
 }
 
 

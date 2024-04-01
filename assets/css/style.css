@@ -354,6 +354,9 @@ p:last-child {
 ul {
     list-style-type: disc;
   }
+footer nav a {
+  display: block;
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -599,9 +602,6 @@ ul {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
-.m-4 {
-  margin: 1rem;
-}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -834,6 +834,10 @@ ul {
   padding-left: 4rem;
   padding-right: 4rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
@@ -854,9 +858,13 @@ ul {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .pb-4 {
   padding-bottom: 1rem;
