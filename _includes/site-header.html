@@ -1,12 +1,12 @@
 <nav class="flex justify-around items-center py-8 px-32">
     <div>
-        {% for item in site.data.site-settings.navigation limit:3 %}
+        {% for item in site.data.navigation.header limit:3 %}
         <a href="{{item.url}}" class="py-1 px-16">{{item.title}}</a>
         {% endfor %}
     </div>
-    <img src="/images/logos/bi-logo.png" class="logo">
+    <img src="{{site.data.site-settings.general.logo_path}}" class="logo">
     <div">
-        {% for item in site.data.site-settings.navigation limit:3 offset:3 %}
+        {% for item in site.data.navigation.header limit:3 offset:3 %}
         <a href="{{item.url}}" class="py-1 px-16">{{item.title}}</a>
         {% endfor %}
     </div>

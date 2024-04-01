@@ -68,14 +68,7 @@
   }
 
   .button-form {
-    border: 1px solid inherit;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    text-transform: uppercase;
-  }
-
-  .button-form:hover {
-    @apply bg-light/30 duration-500
+    @apply border border-x-light py-2 px-4 inline-block uppercase hover:bg-light/30 hover:duration-500
   }
 
   .link {

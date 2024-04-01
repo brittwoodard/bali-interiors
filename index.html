@@ -63,12 +63,15 @@ shop:
        url: https://shop.bali-interiors.com/collections/all-prints
        text: Shop Now 
    - background-image: 
-       image_path: www.bali-interiors.com/wp-content/uploads/2022/03/BaliInteriors-throws.jpg
+       image_path: https://www.bali-interiors.com/wp-content/uploads/2022/03/BaliInteriors-throws.jpg
        image_focus: center
      title: Throw collection
      button: 
        url: www.bali-interiors.com/wp-content/uploads/2022/03/BaliInteriors-throws.jpg
        text: Shop Now 
+cta: 
+  title_html: Join the Bali Interiors <em>community</em>
+  description_html: Access our interiors inspiration every 2 weeks straight to your inbox
 seo:
   title: Bali Interiors
   description:
@@ -256,8 +259,9 @@ seo:
     </div>
     <div class="grid grid-cols-3 gap-8">
         {% for item in page.shop.collection %}
-        <div class="bg-image-style aspect-portrait border-2 border-dark middle-center" style="background-image: url('{{ item.background-image.image_path }}'); background-position: {{ item.background-image.image_focus }};">
-            <div class="text-dark text-center">
+        <div>
+            <div class="bg-image-style aspect-portrait border-2 border-dark mb-8" style="background-image: url('{{ item.background-image.image_path }}'); background-position: {{ item.background-image.image_focus }};"></div>
+            <div class="text-x-light text-center">
                 <h4 class="sans-sm">{{ item.title }}</h4>
                 <a class="italic hover:text-x-light hover:duration-500" href="{{ item.button.url }}">{{ item.button.text }} →</a>
             </div>
@@ -266,39 +270,27 @@ seo:
     </div>
 </section>
 
-<!-- Join the Community -->
-<section class="bg-image-style" style="background-image: url('#');">
-    <h2>{{page.cta.heading_html}}</h2>
-    <h3>{{page.cta.subtitle}}</h3>
-    <p>{{page.cta.description_html}}</p>
-    <form>
-        <!-- First Name -->
-        <div class="mc-field-group md:col-span-2">
-            <input type="text" name="FNAME" class="required text bg-transparent border border-white w-full"
-                placeholder=" First Name" id="mce-FNAME" required="" value="">
+<!-- Join The Community -->
+<section class="grid grid-cols-5 border-2 border-dark">
+    <div class="col-span-2 p-10p bg-dark text-light">
+        {% include form-work-with-us.html %}
+    </div>
+    <div class="col-span-3 flex items-center p-10p">
+        <div class="text-dark">
+                <h2 class="font-serif text-[1.6rem]">{{page.cta.title_html}}</h2>
+                <p>{{page.cta.description_html}}</p>
         </div>
-
-        <!-- Last Name -->
-        <div class="mc-field-group md:col-span-2">
-            <input type="text" name="LNAME" class="required text bg-transparent border border-white w-full"
-                placeholder=" Last Name" id="mce-LNAME" required="" value="">
-        </div>
-
-        <!-- Email -->
-        <div class="mc-field-group md:col-span-2">
-            <input type="email" name="EMAIL" class="required email bg-transparent border border-white w-full"
-                placeholder=" Email" id="mce-EMAIL" required="" value="">
-        </div>
-
-        <!-- Button -->
-        <div class="clear col-span-1">
-            <input type="submit" name="subscribe" id="mc-embedded-subscribe"
-                class="button rounded-none py-0 cursor-pointer w-full" value="Submit">
-        </div>
-        </div>
-    </form>
+    </div>   
 </section>
 
-<section>
-    Instagram Feed
+<!-- Instagram -->
+<section class="px-2">
+    <div class="grid grid-cols-6">
+        <div class="border border-dark aspect-square my-4 mx-2"></div>
+        <div class="border border-dark aspect-square my-4 mx-2"></div>
+        <div class="border border-dark aspect-square my-4 mx-2"></div>
+        <div class="border border-dark aspect-square my-4 mx-2"></div>
+        <div class="border border-dark aspect-square my-4 mx-2"></div>
+        <div class="border border-dark aspect-square my-4 mx-2"></div>
+    </div>
 </section>

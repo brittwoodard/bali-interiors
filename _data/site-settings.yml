@@ -1,7 +1,7 @@
 general:
   site-name: Your Website Name
   form-email: hello@websitename.com
-  logo_path: /images/brand_logo.png
+  logo_path: /images/logos/bi-logo.png
   logo-max-width: 400px
   logo-text: YOUR LOGO
 seo:
@@ -15,7 +15,7 @@ seo:
   twitter_card: summary
   twitter_description: 
 social:
-  instagram_username: kliohstudio
+  instagram_username: 
   facebook_username:
   pinterest_username:
   linkedin_username:

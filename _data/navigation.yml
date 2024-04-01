@@ -1,4 +1,4 @@
-navigation: 
+header: 
   - url: '#'
     title: Bali
   - url: '#'
@@ -11,3 +11,26 @@ navigation:
     title: Podcast
   - url: '#'
     title: Retreat
+footer: 
+  navigation: 
+   - url: '#'
+     title: Home
+   - about: '#'
+     title: About
+   - url: '#'
+     title: Bio
+   - about: '#'
+     title: Testimonials
+   - url: '#'
+     title: Guides
+   - about: '#'
+     title: Press
+   - about: '#'
+     title: Contact Us
+   - url: '#'
+     title: Work With Us
+  legal: 
+   - url: '#'
+     title: Privacy Policy
+   - url: '#'
+     title: Terms & Conditions
