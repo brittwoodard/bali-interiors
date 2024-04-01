@@ -1,16 +1,16 @@
-<footer class="grid grid-cols-5 py-5p px-10p">
+<footer class="grid grid-cols-6 gap-8 py-5p px-10p border-t-2 border-dark bg-light">
     <!-- Logo Column -->
-    <div>
-        <img src="{{site.data.site-settings.general.logo_path}}" class="logo">
+    <div class="col-span-2">
+        <img src="{{site.data.site-settings.general.logo_path}}" class="logo mb-4">
         <p>{{site.data.site-settings.general.permission}}</p>
     </div>
     {% assign nav_items = site.data.navigation.footer.navigation %}
     {% assign half_size = nav_items | size | divided_by: 2 %}
 
     <!-- Navigation Menu -->
-    <nav class="col-span-3">
+    <nav class="col-span-3 grid grid-cols-3">
         <!-- Navigation Columns -->
-        <div class="grid grid-cols-2">
+        <div class="col-span-2 grid grid-cols-2">
             <div class="footer-nav-column">
                 <!-- Loop for the first half of navigation items -->
                 {% for item in nav_items limit: half_size %}
@@ -27,14 +27,14 @@
 
         <!-- Legal Column -->
         <div class="col-span-1">
-            {% for item in site.data.footer.legal %}
+            {% for item in site.data.navigation.footer.legal %}
             <a href="{{ item.url }}">{{ item.title }}</a>
             {% endfor %}
         </div>
     </nav>
 
     <!-- Social -->
-    <div class="social-icons">
+    <div class="social-icons text-right">
         <span>FB</span>
         <span>IG</span>
         <span>P</span>

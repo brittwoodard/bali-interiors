@@ -45,7 +45,7 @@
   }
 
   footer nav a {
-    @apply block
+    @apply block uppercase mb-2
   }
 
 }

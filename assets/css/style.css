@@ -355,7 +355,9 @@ ul {
     list-style-type: disc;
   }
 footer nav a {
+  margin-bottom: 0.5rem;
   display: block;
+  text-transform: uppercase;
 }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -802,6 +804,10 @@ footer nav a {
   --tw-bg-opacity: 1;
   background-color: rgb(248 247 245 / var(--tw-bg-opacity));
 }
+.bg-medium {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 225 221 / var(--tw-bg-opacity));
+}
 .bg-contain {
   background-size: contain;
 }
@@ -830,6 +836,10 @@ footer nav a {
 .p-8 {
   padding: 2rem;
 }
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -854,17 +864,13 @@ footer nav a {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.px-10p {
-  padding-left: 10%;
-  padding-right: 10%;
-}
 .py-5p {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
@@ -874,6 +880,9 @@ footer nav a {
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .font-serif {
   font-family: kepler-std, serif;;
