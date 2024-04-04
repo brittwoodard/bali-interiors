@@ -137,3 +137,17 @@
   }
 
 }
+
+  /* Slick */
+  .slick-prev::before {
+    font-family: sans-serif;
+    color: red;
+  }
+
+
+/* slick-theme.css | https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css */
+
+.slick-prev {
+  /* left: -25px; */
+  left: -30px;
+}

@@ -472,11 +472,6 @@ footer nav a {
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
-.middle-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .button-form {
   display: inline-block;
   border-width: 1px;
@@ -725,6 +720,9 @@ footer nav a {
 .items-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
 }
@@ -948,6 +946,20 @@ footer nav a {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
+
+  /* Slick */
+  .slick-prev::before {
+    font-family: sans-serif;
+    color: red;
+  }
+
+
+/* slick-theme.css | https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css */
+
+.slick-prev {
+  /* left: -25px; */
+  left: -30px;
+}
 
 .hover\:text-x-light:hover {
   --tw-text-opacity: 1;
