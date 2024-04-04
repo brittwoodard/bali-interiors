@@ -26,6 +26,10 @@
     transition: 0.5s;
   }
 
+  div {
+    font-size: 0;
+  }
+
   h1,
   h2,
   h3,

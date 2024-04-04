@@ -339,6 +339,9 @@ nav a:hover {
     color: var(--dark);
     transition: 0.5s;
   }
+div {
+    font-size: 0;
+  }
 h1,
   h2,
   h3,
@@ -803,10 +806,6 @@ footer nav a {
 .bg-x-light {
   --tw-bg-opacity: 1;
   background-color: rgb(248 247 245 / var(--tw-bg-opacity));
-}
-.bg-medium {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 225 221 / var(--tw-bg-opacity));
 }
 .bg-contain {
   background-size: contain;
