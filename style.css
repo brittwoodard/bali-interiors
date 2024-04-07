@@ -137,3 +137,29 @@
   }
 
 }
+
+  /* Slick */
+  .slick-prev::before {
+    font-family: sans-serif;
+    color: black;
+    opacity: 100;
+    font-size: 2.5rem;
+    }
+  
+  .slick-prev {
+    left: -8%;
+    top: 40%
+  }
+
+  .slick-next::before {
+    font-family: sans-serif;
+    color: black;
+    opacity: 100%;
+    font-size: 2.5rem;
+    }
+  
+  .slick-next {
+    left: 103%;
+    top: 40%
+  }
+  
