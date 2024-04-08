@@ -335,12 +335,18 @@ body {
   --tw-text-opacity: 1;
   color: rgb(39 45 39 / var(--tw-text-opacity));
 }
+nav a {
+    font-size: 1rem;
+  }
 nav a:hover {
     color: var(--dark);
     transition: 0.5s;
   }
 div {
     font-size: 0;
+  }
+form label {
+    font-size: 1.1rem;
   }
 h1,
   h2,

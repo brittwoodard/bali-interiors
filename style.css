@@ -21,6 +21,10 @@
     @apply bg-light font-sans tracking-wide font-normal text-black max-h-[100vh]
   }
 
+  nav a {
+    font-size: 1rem;
+  }
+
   nav a:hover {
     color: var(--dark);
     transition: 0.5s;
@@ -28,6 +32,10 @@
 
   div {
     font-size: 0;
+  }
+
+  form label {
+    font-size: 1.1rem;
   }
 
   h1,
