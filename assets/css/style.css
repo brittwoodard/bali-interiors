@@ -521,49 +521,14 @@ footer nav a {
   transition-duration: 500ms;
 }
 .logo {
-    width: 5rem;
-    text-align: center;
-  }
+  width: 5rem;
+  text-align: center;
+}
 .bg-image-style {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center
-  }
-#retreat .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    /* Adjust if necessary */
-  }
-#retreat .embed-container iframe,
-  #retreat .embed-container object,
-  #retreat .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-/* Video */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    /* Adjust if necessary */
-  }
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .absolute {
   position: absolute;
 }
@@ -876,9 +841,6 @@ footer nav a {
 .pr-12 {
   padding-right: 3rem;
 }
-.pr-20 {
-  padding-right: 5rem;
-}
 .text-center {
   text-align: center;
 }
@@ -964,7 +926,7 @@ footer nav a {
 
 .slick-prev {
   left: -8%;
-  top: 40%
+  top: 20%
 }
 
 .slick-next::before {
@@ -976,7 +938,26 @@ footer nav a {
 
 .slick-next {
   left: 103%;
-  top: 40%
+  top: 20%
+}
+
+/* Video */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .hover\:text-x-light:hover {

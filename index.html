@@ -229,15 +229,13 @@ seo:
 
         {% for item in page.peek-in-paradise %}
         <div>
-            <div class="pr-20">
-                <div class="video-container">
-                    <iframe src="{{item.video-iframe-link}}" frameborder="0" allowfullscreen></iframe>
+                <div>
+                    <iframe src="{{item.video-iframe-link}}" frameborder="0" allowfullscreen class="border-2 border-dark"></iframe>
                 </div>
                 <div class="mt-4">
                     <h3 class="uppercase">{{item.title}}</h3>
                     <p class="line-clamp-2">{{item.description}}</p>
                 </div>     
-            </div>
         </div>
         {% endfor %}
 
