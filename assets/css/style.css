@@ -550,11 +550,12 @@ footer nav a {
 /* Video */
 .video-container {
     position: relative;
-    width: 100%;
-    padding-top: 56.25%;
+    padding-bottom: 56.25%;
     /* 16:9 Aspect Ratio */
+    height: 0;
     overflow: hidden;
-    /* Ensures the content is not protruding */
+    max-width: 100%;
+    /* Adjust if necessary */
   }
 .video-container iframe {
     position: absolute;
