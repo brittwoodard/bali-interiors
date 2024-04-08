@@ -83,7 +83,7 @@ seo:
 
 <!-- Hero Banner -->
 <section>
-    <div class="slider-container">
+    <div class="slider-container text-[0]">
         {% for item in page.heading.image %}
         <div class="slider-item bg-image-style min-h-[85vh] relative"
              style="background-image: url('{{ item.background_image }}'); background-position: {{ item.image_focus }};">
@@ -222,20 +222,22 @@ seo:
 
 <!-- Peak In Paradise -->
 <section class="bg-x-light p-10p">
-    <div class="mb-4">
+    <div class="mb-12">
         <h2 class="sans-sm text-center">Recently on <span class="font-serif capitalize italic">A Peek In Paradise</span></h2>
     </div>
     <div class="episodes-container">
 
         {% for item in page.peek-in-paradise %}
         <div>
-            <div class="video-container">
-                <iframe src="{{item.video-iframe-link}}" frameborder="0" allowfullscreen></iframe>
+            <div class="pr-20">
+                <div class="video-container">
+                    <iframe src="{{item.video-iframe-link}}" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="mt-4">
+                    <h3 class="uppercase">{{item.title}}</h3>
+                    <p class="line-clamp-2">{{item.description}}</p>
+                </div>     
             </div>
-            <div class="mt-4">
-                <h3 class="uppercase">{{item.title}}</h3>
-                <p class="line-clamp-2">{{item.description}}</p>
-            </div>     
         </div>
         {% endfor %}
 

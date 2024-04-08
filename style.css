@@ -21,21 +21,9 @@
     @apply bg-light font-sans tracking-wide font-normal text-black max-h-[100vh]
   }
 
-  nav a {
-    font-size: 1rem;
-  }
-
   nav a:hover {
     color: var(--dark);
     transition: 0.5s;
-  }
-
-  div {
-    font-size: 0;
-  }
-
-  form label {
-    font-size: 1.1rem;
   }
 
   h1,
@@ -144,30 +132,30 @@
     height: 100%;
   }
 
+
 }
 
-  /* Slick */
-  .slick-prev::before {
-    font-family: sans-serif;
-    color: black;
-    opacity: 100;
-    font-size: 2.5rem;
-    }
-  
-  .slick-prev {
-    left: -8%;
-    top: 40%
-  }
+/* Slick */
+.slick-prev::before {
+  font-family: sans-serif;
+  color: black;
+  opacity: 100;
+  font-size: 2.5rem;
+}
 
-  .slick-next::before {
-    font-family: sans-serif;
-    color: black;
-    opacity: 100%;
-    font-size: 2.5rem;
-    }
-  
-  .slick-next {
-    left: 103%;
-    top: 40%
-  }
-  
+.slick-prev {
+  left: -8%;
+  top: 40%
+}
+
+.slick-next::before {
+  font-family: sans-serif;
+  color: black;
+  opacity: 100%;
+  font-size: 2.5rem;
+}
+
+.slick-next {
+  left: 103%;
+  top: 40%
+}
