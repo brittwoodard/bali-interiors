@@ -602,9 +602,6 @@ footer nav a {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
-.m-4 {
-  margin: 1rem;
-}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
