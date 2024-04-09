@@ -569,6 +569,10 @@ footer nav a {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -620,6 +624,9 @@ footer nav a {
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+.aspect-video {
+  aspect-ratio: 16 / 9;
 }
 .h-\[100\%\] {
   height: 100%;
@@ -926,7 +933,7 @@ footer nav a {
 
 .slick-prev {
   left: -8%;
-  top: 20%
+  top: 30%
 }
 
 .slick-next::before {
@@ -938,7 +945,7 @@ footer nav a {
 
 .slick-next {
   left: 103%;
-  top: 20%
+  top: 30%
 }
 
 /* Video */

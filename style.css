@@ -103,7 +103,7 @@
 
 .slick-prev {
   left: -8%;
-  top: 20%
+  top: 30%
 }
 
 .slick-next::before {
@@ -115,7 +115,7 @@
 
 .slick-next {
   left: 103%;
-  top: 20%
+  top: 30%
 }
 
 /* Video */
